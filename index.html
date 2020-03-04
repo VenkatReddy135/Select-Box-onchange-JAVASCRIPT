@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="num1" class="form" name="form">
+        <option value=""><i>---SELECT FORM---</i></option>
+        <option value="WELCOME TO LOGIN FORM">Login</option>
+        <option value="WELCOME TO REGISTRATION FORM">Registration</option>
+        <option value="WELCOME TO APPLICATION FORM">Application</option>
+      </select>
+    <br> <br>
+      <h1 style="color:green" class="result"></h1>
+</body>
+  <script type="text/javascript">
+  
+  const selectElement = document.querySelector('.form');
+
+selectElement.addEventListener('change', (event) => {
+  const result = document.querySelector('.result');
+  result.textContent = ` ${event.target.value} `;
+ 
+});
+</script>
+</html>
